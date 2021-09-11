@@ -1,4 +1,4 @@
-package com.moringaschool.myrestaurants;
+package com.moringaschool.myrestaurants.network;
 
 import java.io.IOException;
 
@@ -11,6 +11,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import static com.moringaschool.myrestaurants.Constants.YELP_API_KEY;
 import static com.moringaschool.myrestaurants.Constants.YELP_BASE_URL;
+
+import com.moringaschool.myrestaurants.network.YelpApi;
 
 public class YelpClient {
 

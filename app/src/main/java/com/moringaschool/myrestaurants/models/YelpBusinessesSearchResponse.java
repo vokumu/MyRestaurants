@@ -1,9 +1,11 @@
 
-package com.moringaschool.myrestaurants;
+package com.moringaschool.myrestaurants.models;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import com.moringaschool.myrestaurants.models.Business;
+import com.moringaschool.myrestaurants.models.Region;
 
 
 public class YelpBusinessesSearchResponse {

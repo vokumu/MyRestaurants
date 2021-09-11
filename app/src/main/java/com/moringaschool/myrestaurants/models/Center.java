@@ -1,24 +1,23 @@
 
-package com.moringaschool.myrestaurants;
-
+package com.moringaschool.myrestaurants.models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Coordinates {
+public class Center {
 
-    @SerializedName("latitude")
-    @Expose
-    private Double latitude;
     @SerializedName("longitude")
     @Expose
     private Double longitude;
+    @SerializedName("latitude")
+    @Expose
+    private Double latitude;
 
     /**
      * No args constructor for use in serialization
      * 
      */
-    public Coordinates() {
+    public Center() {
     }
 
     /**
@@ -26,17 +25,9 @@ public class Coordinates {
      * @param latitude
      * @param longitude
      */
-    public Coordinates(Double latitude, Double longitude) {
+    public Center(Double longitude, Double latitude) {
         super();
-        this.latitude = latitude;
         this.longitude = longitude;
-    }
-
-    public Double getLatitude() {
-        return latitude;
-    }
-
-    public void setLatitude(Double latitude) {
         this.latitude = latitude;
     }
 
@@ -46,6 +37,14 @@ public class Coordinates {
 
     public void setLongitude(Double longitude) {
         this.longitude = longitude;
+    }
+
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
     }
 
 }
